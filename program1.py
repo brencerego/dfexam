@@ -1,7 +1,3 @@
-PRACTICAL 1- Simulating Digital Evidence Collection  
-Write a Python script to simulate collecting basic digital evidence from system logs and files (e.g., fetching system log files).  
-  
-  
 import os
 import shutil
 import hashlib
@@ -27,9 +23,8 @@ def calculate_hash(file_path):
                 break
 
             sha256.update(data)
--
-    return sha256.hexdigest()
 
+    return sha256.hexdigest()
 
 with open(report_file, "w", newline="") as csvfile:
 
@@ -76,13 +71,3 @@ with open(report_file, "w", newline="") as csvfile:
 print("\nDigital evidence collection completed.")
 print("Evidence saved in:", destination_folder)
 print("Report saved as:", report_file)
-
-TEXT DOCUMENT  
-system_log.txt  
-2026-08-21 09:00:01 - User login successful  
-2026-08-21 09:15:22 - File accessed  
-2026-08-21 09:30:45 - USB device connected  
-2026-08-21 10:05:12 - User logout  
-  
-Suspicious_file.txt  
-This is a sample file for digital forensic investigation.  
