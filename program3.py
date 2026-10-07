@@ -1,5 +1,4 @@
-PRACTICAL 3
-HASHING FILES FOR INTEGERTY CHECK
+PRACTICAL 3-HASHING FILES FOR INTEGERTY CHECK
 Create a program to generate and compare file hashes using algorithms like MD5 and SHA-256
 
 import hashlib
